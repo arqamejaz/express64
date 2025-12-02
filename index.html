@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express 64 - Premium Beer & Wine Store | 24/7 Convenience & Services</title>
+    <meta name="description" content="Express 64 - Your premier destination for beer, wine, convenience items, and essential services. Located on major travel routes with competitive prices and friendly service.">
+    <meta name="keywords" content="beer store, wine shop, convenience store, liquor store, gas station, lottery, ATM, automotive supplies, Express 64, 24/7 service">
+    <meta name="author" content="Express 64">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="Express 64 - Your Premier Beer & Wine Destination">
+    <meta property="og:description" content="Premium beer and wine selection with convenience store services. Competitive prices, friendly service, and convenient location on major travel routes.">
+    <meta property="og:image" content="images/express64-store-exterior.jpg">
+    <meta property="og:url" content="https://express64.com">
+    <meta property="og:site_name" content="Express 64">
+    <meta property="business:contact_data:street_address" content="Highway Route Location">
+    <meta property="business:contact_data:locality" content="City">
+    <meta property="business:contact_data:region" content="State">
+    <meta property="business:contact_data:postal_code" content="12345">
+    <meta property="business:contact_data:country_name" content="United States">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://express64.com">
+    <meta property="twitter:title" content="Express 64 - Your Premier Beer & Wine Destination">
+    <meta property="twitter:description" content="Premium beer and wine selection with convenience store services. Competitive prices, friendly service, and convenient location.">
+    <meta property="twitter:image" content="images/express64-store-exterior.jpg">
+    
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://express64.com">
+    <meta name="geo.region" content="US-TX">
+    <meta name="geo.placename" content="Tyler">
+    <meta name="geo.position" content="32.3583285;-95.3636307">
+    <meta name="ICBM" content="32.3583285, -95.3636307">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-32.png">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="images/express64-store-exterior.jpg" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style">
+    
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LiquorStore",
+        "name": "Express 64",
+        "description": "Premier beer and wine store with convenience services including lottery, ATM, automotive supplies, and travel essentials. Serving locals and travelers with competitive prices and friendly service.",
+        "url": "https://express64.com",
+        "logo": "https://express64.com/images/express64-logo.png",
+        "image": [
+            "https://express64.com/images/express64-beverage-selection.jpg",
+            "https://express64.com/images/express64-store-interior.jpg",
+            "https://express64.com/images/express64-convenience-section.jpg"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "11874 State Hwy 64",
+            "addressLocality": "Tyler",
+            "addressRegion": "TX",
+            "postalCode": "75704",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.3583285",
+            "longitude": "-95.3636307"
+        },
+        "telephone": "832-503-5498",
+        "email": "amstoresinc@yahoo.com",
+        "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 07:00-24:00",
+        "priceRange": "$",
+        "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "EBT"],
+        "currenciesAccepted": "USD",
+        "amenityFeature": [
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Beer & Wine Selection",
+                "value": true
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "ATM",
+                "value": true
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Lottery Services",
+                "value": true
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Parking",
+                "value": true
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Automotive Supplies",
+                "value": true
+            }
+        ],
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Product",
+                    "name": "Premium Beer Selection",
+                    "description": "Wide variety of domestic and imported beers"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Product",
+                    "name": "Fine Wine Collection",
+                    "description": "Quality wines from local and international vineyards"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Product",
+                    "name": "Convenience Store",
+                    "description": "Snacks, beverages, and everyday essentials"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "ATM Service",
+                    "description": "Convenient cash access with competitive fees"
+                }
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/express64",
+            "https://www.instagram.com/express64",
+            "https://twitter.com/express64"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <svg class="express64-logo" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Shadow text -->
+                        <text x="5" y="55" class="logo-shadow">EXPRESS 64</text>
+                        <!-- Black outline -->
+                        <text x="0" y="50" class="logo-outline">EXPRESS 64</text>
+                        <!-- Main text -->
+                        <text x="0" y="50" class="logo-main">EXPRESS 64</text>
+                        <!-- Tagline -->
+                        <text x="0" y="70" class="logo-tagline">BEER & WINE</text>
+                    </svg>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#highlights" class="nav-link">Why Choose Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Your Premier Beer & Wine Destination</h1>
+            <p class="hero-subtitle">Express 64 — Where quality meets convenience on your journey.</p>
+            <a href="#contact" class="cta-button">Visit Us Today</a>
+        </div>
+        <div class="hero-features">
+            <div class="feature-item">
+                <span class="feature-icon">🍺</span>
+                <span class="feature-text">Premium Beer</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🍷</span>
+                <span class="feature-text">Fine Wine</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🛒</span>
+                <span class="feature-text">Convenience Store</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Express 64</h2>
+                    <p class="section-subtitle">More than just a store — we're your neighborhood destination for quality beverages and convenience.</p>
+                    <p class="about-description">
+                        Located conveniently on major travel routes, Express 64 has been serving the community with an exceptional selection of beer, wine, and everyday essentials. Our commitment to quality products, competitive prices, and outstanding customer service makes us the preferred choice for locals and travelers alike.
+                    </p>
+                    <p class="about-description">
+                        Whether you're stocking up for a celebration, grabbing a quick snack, or need essential automotive supplies, our friendly staff is here to help you find exactly what you need with a smile.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Beer & Wine Varieties</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Customer Satisfaction</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Convenient Access</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/express64-store-interior.jpg" alt="Express 64 modern store interior with organized beverage selection and convenience items" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Everything you need for your journey and daily essentials, all in one convenient location.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🍺</div>
+                    <h3>Premium Beer Selection</h3>
+                    <p>Extensive collection of domestic and imported beers including craft brews, popular brands, and seasonal selections. From light lagers to bold IPAs, find your perfect brew.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🍷</div>
+                    <h3>Fine Wine Collection</h3>
+                    <p>Curated selection of quality wines from local and international vineyards. Red, white, rosé, and sparkling wines to complement any occasion or meal.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛒</div>
+                    <h3>Convenience Store</h3>
+                    <p>Complete selection of snacks, beverages, dairy products, and everyday essentials. Perfect for quick stops, road trip supplies, and emergency needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎰</div>
+                    <h3>Gaming & Lottery</h3>
+                    <p>Full lottery services including scratch-off tickets, daily drawings, and jackpot games. Try your luck with the latest games and prizes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏧</div>
+                    <h3>ATM Services</h3>
+                    <p>Convenient ATM access with competitive fees. Get cash quickly and securely for your purchases and other needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Automotive Supplies</h3>
+                    <p>Essential automotive products including motor oil, coolant, windshield fluid, and basic maintenance items to keep you moving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="highlights">
+        <div class="container">
+            <div class="highlights-header">
+                <h2 class="section-title">Why Choose Express 64?</h2>
+                <p class="section-subtitle">Discover the advantages that make us your preferred destination.</p>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">⭐</div>
+                    <h3>Best Selection</h3>
+                    <p>Largest variety of beer and wine in the area with over 500 different options. From everyday favorites to unique finds, we have something for every taste and budget.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">💰</div>
+                    <h3>Competitive Prices</h3>
+                    <p>Unbeatable prices on beer, wine, and convenience items. We consistently offer some of the best deals in the area without compromising on quality.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">📍</div>
+                    <h3>Prime Location</h3>
+                    <p>Conveniently located on major travel routes with easy access and ample parking. Perfect for both local customers and travelers passing through.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">😊</div>
+                    <h3>Friendly Service</h3>
+                    <p>Our knowledgeable staff provides personalized recommendations and exceptional customer service to make every visit pleasant and efficient.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🕐</div>
+                    <h3>Extended Hours</h3>
+                    <p>Open extended hours to serve you when it's convenient for you. Whether early morning or late evening, we're here when you need us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Take a look at our modern facilities and extensive product selection.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/express64-beer-wine-coolers.jpg" alt="Express 64 extensive beer and wine cooler section with variety of brands and styles" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/express64-beverage-selection.jpg" alt="Express 64 beverage aisles featuring wide selection of alcoholic and non-alcoholic drinks" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/express64-store-exterior.jpg" alt="Express 64 store exterior with modern signage and convenient parking" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/express64-convenience-section.jpg" alt="Express 64 convenience store section with snacks, essentials, and everyday items" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/express64-checkout-area.jpg" alt="Express 64 modern checkout area with lottery services and customer service counter" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/express64-store-interior.jpg" alt="Express 64 clean and organized store interior with wide aisles and modern fixtures" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/express64-frozen-beverages.jpg" alt="Express 64 frozen beverage section with variety of cold drinks and refrigerated products" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/express64-snack-wine-aisles.jpg" alt="Express 64 snack aisles and wine selection with organized displays and competitive prices" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-choose-content">
+                <h2 class="section-title">What Makes Us Different?</h2>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon-box">🏆</div>
+                        <h3>Quality Products</h3>
+                        <p>We carefully select only the finest beer, wine, and convenience items to ensure you get the best value for your money every time.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-box">🚗</div>
+                        <h3>Easy Access</h3>
+                        <p>Conveniently located with ample parking and easy access for vehicles of all sizes. Quick in and out for busy schedules.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-box">🎯</div>
+                        <h3>Local Focus</h3>
+                        <p>We understand our community's needs and stock products that locals love while welcoming travelers with open arms.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-box">💳</div>
+                        <h3>Multiple Payment Options</h3>
+                        <p>Accept cash, credit cards, debit cards, and EBT for maximum convenience and accessibility for all customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Visit Express 64 Today</h2>
+                    <p class="section-subtitle">Experience the Express 64 difference - where quality meets convenience.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>📍 Location</h3>
+                            <p>11874 State Hwy 64<br>Tyler, TX 75704</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📞 Phone</h3>
+                            <p>832-503-5498</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🕐 Hours</h3>
+                            <p>Monday - Sunday<br>7:00 AM - 12:00 AM</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>✉️ Email</h3>
+                            <p>amstoresinc@yahoo.com</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                        <a href="#" class="social-link">🐦 Twitter</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <h3>Get in Touch</h3>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3370.2690043025805!2d-95.3636307!3d32.3583285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8649c923bc8c7669%3A0xd360430cb33fce26!2sExpress64!5e0!3m2!1sen!2s!4v1764634094322!5m2!1sen!2s" width="100%" height="450" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Express 64</h3>
+                    <p>Your premier beer and wine destination. Serving the community with quality products, competitive prices, and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#highlights">Why Choose Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Premium Beer Selection</li>
+                        <li>Fine Wine Collection</li>
+                        <li>Convenience Store</li>
+                        <li>Lottery & Gaming</li>
+                        <li>ATM Services</li>
+                        <li>Automotive Supplies</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 11874 State Hwy 64<br>Tyler, TX 75704</p>
+                    <p>📞 832-503-5498</p>
+                    <p>✉️ amstoresinc@yahoo.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Express 64. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
