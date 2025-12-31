@@ -163,9 +163,9 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(37, 99, 235, 0.7), rgba(220, 38, 38, 0.6)),
-                url('images/express64-store-exterior.jpg');
+                url('images/hero-bg.png');
     background-size: cover;
-    background-position: center top;
+    background-position: top;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
